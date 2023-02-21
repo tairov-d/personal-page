@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+        box-sizing: border-box;
+}
+
+body {
+    background: url("https://bit.ly/hw4daniel"); opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.container > * {
+    display: flex;
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    height: 200px;
+}
+
+.container .box1 {
+    flex-grow: 1;
+    flex-basis: 722px;
+}
+
+.container .box2 {
+    flex-grow: 2;
+    flex-basis: 600px;
+}
+
+.container .box3 {
+    flex-grow: 3;
+    flex-basis: 1400px;
+}
+
+.container .box4 {
+    flex-grow: 1;
+    flex-basis: 105px;
+}
+
+.container .box5 {
+    flex-grow: 2;
+    flex-basis: 254px;
+}
+
+.container .box6 {
+    flex-grow: 3;
+    flex-basis: 100px;
+}
