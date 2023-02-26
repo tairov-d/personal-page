@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: tahoma;
+}
+
+.image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container>* {
+    flex-basis: 200px;
+    border: 2px firebrick;
+    border-style: solid;
+    flex-grow: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+ul>* {
+    display: flex;
+    background-color: pink;
+    padding: .5rem;
+}
+
+.box3 ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box2 ul {
+    display: flex;
+    justify-content: center;
+}
+
+.box5 ul {
+    display: flex;
+    justify-content: end;
+}
+
+.box1 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box4 ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box4 ul>* {
+    display: flex;
+    flex-grow: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.box5>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box1>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.box4>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.box3>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box2>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box1 .image {
+    display: flex;
+    background-image: url("https://unsplash.it/300/200?1");
+}
+
+.box2 .image {
+    display: flex;
+    background-image: url("https://unsplash.it/300/200?2");
+}
+
+.box3 .image {
+    display: flex;
+    background-image: url("https://unsplash.it/300/200?3");
+}
+
+.box4 .image {
+    display: flex;
+    background-image: url("https://unsplash.it/500/200?4");
+}
+
+.box5 .image {
+    display: flex;
+    background-image: url("https://unsplash.it/800/200?5");
+}
+
+button {
+    background-color: firebrick;
+    padding: .5rem .5rem .5rem .5rem;
+    border: none;
+    width: 100%;
+    color: white;
+}
