@@ -25,14 +25,15 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: minmax(50px, auto) minmax(120px, auto) minmax(500px, auto) minmax(290px, auto) minmax(470px, auto);
-    grid-template-columns: minmax(20px, 375px) minmax(20px, 985px);
+    grid-template-rows: minmax(50px, auto) minmax(120px, auto) minmax(500px, auto) minmax(290px, auto) minmax(470px, auto) minmax(640px, auto);
+    grid-template-columns: minmax(20px, 375px) minmax(20px, 990px);
     grid-template-areas:
         "one one"
         "two two"
-        "six four"
-        "seven three"
-        "seven five";
+        "six eight"
+        "three seven"
+        "three four"
+        "five five";
 }
 
 .box1 {
@@ -53,16 +54,6 @@ body {
 
 .box4 {
     grid-area: four;
-    background-image: url("https://th.bing.com/th/id/OIG.wIe7g2RKN.4mRGkl0VuO?pid=ImgGn");
-    background-blend-mode: multiply;
-    background-color: grey;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 23px;
-    font-family: sans-serif;
 }
 
 .box5 {
@@ -75,6 +66,20 @@ body {
 
 .box7 {
     grid-area: seven;
+}
+
+.box8 {
+    grid-area: eight;
+    background-image: url("https://th.bing.com/th/id/OIG.wIe7g2RKN.4mRGkl0VuO?pid=ImgGn");
+    background-blend-mode: multiply;
+    background-color: grey;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: sans-serif;
 }
 
 ul {
@@ -104,9 +109,10 @@ li {
             "one"
             "two"
             "six"
-            "four"
-            "seven"
+            "eight"
             "three"
+            "seven"
+            "four"
             "five";
     }
 }
