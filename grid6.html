@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11</title>
+    <link rel="stylesheet" href="grid4b.css" class="style">
+    <link href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'
+        type='text/css'>
+</head>
+
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/myd5cr2664b.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">
+            <img src="https://knews.kg/wp-content/uploads/2022/02/knews-logo-www.svg" alt="news">
+        </div>
+        <div class="box3">3</div>
+        <div class="box4">
+            <div class="news1">
+                <div class="square">
+                    <div id="img1" class="image"></div>
+                    <div class="info1">
+                        <h1>Нацбанк Кыргызстана сохранил учетную ставку на уровне 13%</h1>
+                        <h2>10 часов назад</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="news2">
+                <div class="square">
+                    <div id="img2" class="image"></div>
+                    <div class="info2">
+                        <h1>В Таласской области возобновилась переработка мусора</h1>
+                        <h2>4 дня назад</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="news3">
+                <div class="square">
+                    <div id="img3" class="image"></div>
+                    <div class="info3">
+                        <h1>Садыр Жапаров провел встречу со всеми бывшими президентами Кыргызстана</h1>
+                        <h2>3 недели назад</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="news4">
+                <div class="square">
+                    <div id="img4" class="image"></div>
+                    <div class="info4">
+                        <h1>Революции все еще вдыхают жизнь в историю — мыслитель Энцо Траверсо</h1>
+                        <h2>4 недели назад</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box5">5</div>
+        <div class="box6">
+            <ul>
+                <li class="main">ГЛАВНАЯ</li>
+                <li class="power">ВЛАСТЬ</li>
+                <li class="society">ОБЩЕСТВО</li>
+                <li class="accidents">ПРОИСШЕСТВИЯ</li>
+                <li class="business">БИЗНЕС</li>
+                <li class="world">В МИРЕ</li>
+                <li class="fun">РАЗВЛЕЧЕНИЯ</li>
+                <li class="kyrgyz">🇰🇬КЫРГЫЗЧА</li>
+                <li class="fa fa-search"></li>
+            </ul>
+        </div>
+        <div class="box7">
+            <div class="box">
+                <div class="pic">
+                    <img src="https://th.bing.com/th/id/OIG.3DXTVdN1cIKwoq93wAwk?pid=ImgGn" alt="ai">
+                </div>
+                <div class="caption">Нейросеть помогла оценить общую массу всех диких млекопитающих на Земле</div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://th.bing.com/th/id/OIG.NVXd2U4PzJm9n_HVly61?pid=ImgGn" alt="vacuum">
+                </div>
+                <div class="caption">IT-компания уволила более 100 роботов-уборщиков</div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="https://th.bing.com/th/id/OIG.4ivSY9oicVONZzeihgKq?pid=ImgGn" alt="arrest">
+                </div>
+                <div class="caption">Соучредитель «Ала-ТВ» Артур Халдаров отпущен под домашний арест — СМИ</div>
+            </div>
+        </div>
+        <div class="box8">
+            <h1>Long Live the Bio Revolution!</h1>
+        </div>
+    </div>
+
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid4b.css') {
+                style.setAttribute('href', 'grid2b.css');
+            } else {
+                style.setAttribute('href', 'grid4b.css');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
