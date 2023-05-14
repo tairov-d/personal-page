@@ -21,7 +21,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: minmax(50px, 95px) minmax(40px, auto) minmax(50px, 120px) minmax(50px, 636px) minmax(50px, 481px);
+    grid-template-rows: minmax(95px, auto) minmax(40px, auto) minmax(120px, auto) minmax(636px, auto) minmax(481px, auto);
     grid-template-columns: minmax(20px, 200px) minmax(20px, 570px) minmax(20px, 400px);
     grid-template-areas:
         "one one one"
@@ -41,6 +41,7 @@ body {
     align-items: end;
     justify-content: end;
     padding-right: 0.82rem;
+    background-color: #386189;
 }
 
 .box3 {
@@ -70,6 +71,7 @@ body {
     flex-basis: 220px;
     flex-grow: 1;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -211,10 +213,10 @@ body {
 
 #china {
     background-image: url("https://web.archive.org/web/20230315183425im_/https://knews.kg/wp-content/uploads/2023/02/chinadaily-side.jpg");
-    width: 324px;
+    max-width: 324px;
     height: 200px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-left: 21px;
     margin-bottom: 10px;
 }
